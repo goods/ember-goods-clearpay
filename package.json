@@ -5,11 +5,13 @@
   "keywords": [
     "ember-addon"
   ],
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goods/ember-goods-clearpay.git"
+  },
   "license": "MIT",
-  "author": "",
+  "author": "Kyle Nathan",
   "directories": {
-    "doc": "doc",
     "test": "tests"
   },
   "scripts": {
@@ -76,5 +78,10 @@
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
-  }
+  },
+  "main": "index.js",
+  "bugs": {
+    "url": "https://github.com/goods/ember-goods-clearpay/issues"
+  },
+  "homepage": "https://github.com/goods/ember-goods-clearpay#readme"
 }
