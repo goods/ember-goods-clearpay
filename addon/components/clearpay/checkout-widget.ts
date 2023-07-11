@@ -10,6 +10,15 @@ interface ClearpayCheckoutWidgetComponentArgs {
   onError?: (event: any) => void;
 }
 
+interface Params {
+  target: string;
+  locale: string;
+  amount: { amount: string; currency: string };
+  onReady?: (event: any) => void;
+  onChange?: (event: any) => void;
+  onError?: (event: any) => void;
+}
+
 export default class ClearpayCheckoutWidgetComponent extends Component<ClearpayCheckoutWidgetComponentArgs> {
   /**
    *
@@ -24,7 +33,7 @@ export default class ClearpayCheckoutWidgetComponent extends Component<ClearpayC
    */
   @action
   onDidInsert(id: string) {
-    let params = {
+    let params: Params = {
       target: `#${id}`,
       locale: 'en-GB',
       amount: { amount: this.args.amount, currency: 'GBP' },
