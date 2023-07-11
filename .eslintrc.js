@@ -10,6 +10,9 @@ module.exports = {
       legacyDecorators: true,
     },
   },
+  globals: {
+    AfterPay: true,
+  },
   plugins: ['ember'],
   extends: [
     'eslint:recommended',
