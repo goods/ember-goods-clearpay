@@ -9,7 +9,10 @@ module.exports = {
 
   contentFor(type) {
     if (type === 'body') {
-      return '<script type="text/javascript" src="https://portal.sandbox.afterpay.com/afterpay.js"></script>';
+      return (
+        '<script type="text/javascript" src="https://portal.sandbox.afterpay.com/afterpay.js"></script>' +
+        '<script src="https://js.afterpay.com/afterpay-1.x.js" async></script>'
+      );
     }
   },
 };
